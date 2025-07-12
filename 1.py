@@ -1,10 +1,12 @@
 import random
+import os
+
 while True:
-    dice = input("Введите дайсы в формате 1к6 ")
-    amount, num = map(int,dice.split('к'))
-    k=0
+    amount, edges = map(int,input("Введите дайсы в формате 1к6 ").split('к'))
+    os.system("cls")
+    summary=0
     for i in range(amount):
-        itog = random.randint(1, num)
-        k+=itog
-        print(itog)
-    print("Всего:", k)
+        throw = random.randint(1, edges)
+        summary+=throw
+        print(throw)
+    print("Всего:", summary)
