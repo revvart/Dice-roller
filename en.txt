@@ -1,0 +1,4 @@
+Type the roll in the format 1d6 
+d
+Total: 
+Throwing 
